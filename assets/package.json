@@ -15,5 +15,8 @@
   "keywords": [
     "node.js",
     "homework-9"
-  ]
+  ],
+  "dependencies": {
+    "inquirer": "^7.3.2"
+  }
 }
