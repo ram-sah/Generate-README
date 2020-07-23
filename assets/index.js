@@ -27,18 +27,60 @@ function promptUser() {
                 "Installation",
                 "Tests",
                 "Questions",
-                "Usage",               
-                "Contributing",               
-                "Licence",               
+                "Usage",
+                "Contributing",
+                "Licence",
             ]
         },
-
         {
+            type: "input",
+            message: "What are installation process? Install command ",
+            neme: "install"
+        },
+        {
+            type: "input",
+            message: "What is this project use for?",
+            name: "usage"
+        },
+        {
+            type: "list",
+            message: "select license for this project",
+            neme: "license",
+            choices: [
+                "MIT License",
+                "ISC",
+                "Apache License 2.0",
+                "BSD 3-Clause",
+                "Mozilla Public License 2.0",
+                "GNU General Public",
+                "Eclipse Public License version 2.0"
+            ]
+        },
+        {
+            type:"input",
+            message: "Provide your License URL.",
+            name:"licenseURL"
+        },
+        {
+            type: "input",
+            message: "State the name fo contributors",
+            name: "contributors"
+        },
+        {
+            type: "input",
+            message: "Is there test Incuded?",
+            neme: "tests"
+        },
+        {
+            type: "input",
+            message: "Is there anybody to be acknowledge",
+            neme: "acknowledgements"
+        },
+                {
             type: "input",
             message: "What is your user GitHub username?",
             name: "username"
         },
-
     ]);
 }
 
