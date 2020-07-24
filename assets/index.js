@@ -3,6 +3,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
+// const generateReadMe = require("./assets/readme-folder/generate-readme.js")
 
 //Used Prompt to Ask questions to the user and store all the values inside user's data
 function promptUser() {
@@ -15,7 +16,7 @@ function promptUser() {
         {
             type: "input",
             message: "Write brief description of you project",
-            name: "Description",
+            name: "description",
         },
         {
             type: "checkbox",
@@ -24,12 +25,13 @@ function promptUser() {
             choices: [
                 "Project Title",
                 "Description",
+                "table Contents",
                 "Installation",
-                "Tests",
-                "Questions",
                 "Usage",
-                "Contributing",
                 "Licence",
+                "Contributing",
+                "Tests",
+                "Author", 
             ]
         },
         {
@@ -57,11 +59,6 @@ function promptUser() {
             ]
         },
         {
-            type:"input",
-            message: "Provide your License URL.",
-            name:"licenseURL"
-        },
-        {
             type: "input",
             message: "State the name fo contributors",
             name: "contributors"
@@ -70,26 +67,25 @@ function promptUser() {
             type: "input",
             message: "Is there test Incuded?",
             neme: "tests"
-        },
+        },       
         {
-            type: "input",
-            message: "Is there anybody to be acknowledge",
-            neme: "acknowledgements"
-        },
-                {
             type: "input",
             message: "What is your user GitHub username?",
             name: "username"
         },
+        {
+            type: "input",
+            message: "What is your repository name in GitHub for this project?",
+            name: "repository"
+        },
     ]);
 }
 
-
-// Function async Inititing
+// Function async Inititing - this function kicks everything off
 async function init() {
     promptUser()
         .then(() => {
-            return writeFileAsync("README.md");
+            return writeFileAsync("./generated/README.md", generateReadMe(answers));
         }).then(() => {
             console.log("README generation was successful.");
         }).catch(error => console.log(error));
