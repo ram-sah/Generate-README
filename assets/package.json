@@ -13,8 +13,8 @@
   "author": "ram-sah",
   "license": "MIT",
   "keywords": [
-    "node.js",
-    "homework-9"
+    "node",
+    "prompt"
   ],
   "dependencies": {
     "inquirer": "^7.3.2"
