@@ -1,4 +1,6 @@
-# Generate-README
+# Generate-README:
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![LanguageCount](https://img.shields.io/github/languages/count/ram-sah/Generate-README)](https://github.com/ram-sah/Generate-README)
 
 * By Ram-sah : https://ram-sah.github.io/Generate-README/
 
