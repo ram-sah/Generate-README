@@ -18,27 +18,12 @@ function promptUser() {
             type: "input",
             message: "Write brief description of you project",
             name: "description",
-        },
-        {
-            type: "checkbox",
-            message: "Select for your table contents ",
-            name: "tableOfContents",
-            choices: [
-                "Project Title",
-                "Description",
-                "table Contents",
-                "Installation",
-                "Usage",
-                "Licence",
-                "Contributing",
-                "Tests",
-                "Author", 
-            ]
-        },
+        },        
         {
             type: "input",
             message: "What are installation process? Install command ",
-            name: "install"
+            name: "install",
+            default: "npm i"
         },
         {
             type: "input",
@@ -67,12 +52,18 @@ function promptUser() {
         {
             type: "input",
             message: "Is there test Incuded?",
-            name: "tests"
+            name: "tests",
+            default: "npm test"
         },       
         {
             type: "input",
-            message: "What is your user GitHub username?",
+            message: "What is your GitHub username?",
             name: "username"
+        },
+        {
+            type: "input",
+            message: "What is your email address?",
+            name: "email"
         },
         {
             type: "input",
@@ -86,7 +77,7 @@ function promptUser() {
 async function init() {    
     promptUser()
         .then((answers) => {
-            console.log(answers)
+            // console.log(answers)
             const data = generateReadMe(answers)
             console.log(data)
             return writeFileAsync("./generated/README.md", data);
