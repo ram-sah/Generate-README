@@ -10,8 +10,6 @@
 This project is a command-line application that creates a good README file by answering a few prompts. It utilizes (fs) for writing the file, (util) to promisify the writing of the file and (inquirer) to ask the questions. In fact, the README for this project was created with this application. The README that is created is stored in the 'generated' file to keep it separate from this README.
          
 ## Table of Contents
-
-* [Description](#Description:)
        
 * [Installation](#installation)
             
@@ -24,6 +22,8 @@ This project is a command-line application that creates a good README file by an
 * [Tests](#tests)
             
 * [Questions](#Questions)
+
+* [Demo](#Demo)
          
 ## Installation
             
@@ -35,7 +35,10 @@ npm install
         
 ## Usage
             
-This is my first node.js project.
+* This is my first node.js project.
+
+### Technology Used 
+* [VScode](https://code.visualstudio.com/) - The editor of choice
             
 ## License 
             
@@ -50,12 +53,13 @@ I don't know what I would do if someone tried to contribute. I've never had cont
 To run tests, run the following command:
             
 ```
-there are no tests currently for this project
+npm test
 ```
-            
+
 ## Questions
             
 <img src="https://github.com/ram-sah.png" alt="avatar" style="border-radius: 16px" width="30" />
             
-If you have any questions about the repo, open an issue or contact [ram-sah](https://github.com/ram-sah) directly at mohan2036@gmail.com
+If you have any questions please contact me [ram-sah](https://github.com/ram-sah) directly at mohan2036@gmail.com
             
+## Demo 
