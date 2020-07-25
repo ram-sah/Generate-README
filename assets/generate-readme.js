@@ -15,9 +15,7 @@ function generateReadMe(answers) {
 
     ${answers.description}
 
-    ## Table of Contents
-
-    * [ProjectTitle](#projectTitle)
+    ## Table of Contents   
 
     * [Description](#description)
         
@@ -36,9 +34,9 @@ function generateReadMe(answers) {
     ## Installation
 
     To install required dependencies, run this command:
-    \=========\=
+    \`\`\`\`
     ${answers.install}
-    \=========\=
+    \`\`\`\`
 
     ## Usage
 
@@ -58,9 +56,9 @@ function generateReadMe(answers) {
     ## Tests
 
     To run tests, run the following command:
-    \========\=
+    \`\`\`\`
     ${answers.tests}
-    \========\=
+    \`\`\`\`
 
     ## Questions
 
