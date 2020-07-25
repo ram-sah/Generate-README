@@ -3,7 +3,8 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
-// const generateReadMe = require("./assets/readme-folder/generate-readme.js")
+const generateReadMe = require("./generate-readme")
+
 
 //Used Prompt to Ask questions to the user and store all the values inside user's data
 function promptUser() {
@@ -37,7 +38,7 @@ function promptUser() {
         {
             type: "input",
             message: "What are installation process? Install command ",
-            neme: "install"
+            name: "install"
         },
         {
             type: "input",
@@ -47,7 +48,7 @@ function promptUser() {
         {
             type: "list",
             message: "select license for this project",
-            neme: "license",
+            name: "license",
             choices: [
                 "MIT License",
                 "ISC",
@@ -66,7 +67,7 @@ function promptUser() {
         {
             type: "input",
             message: "Is there test Incuded?",
-            neme: "tests"
+            name: "tests"
         },       
         {
             type: "input",
@@ -82,10 +83,13 @@ function promptUser() {
 }
 
 // Function async Inititing - this function kicks everything off
-async function init() {
+async function init() {    
     promptUser()
-        .then(() => {
-            return writeFileAsync("./generated/README.md", generateReadMe(answers));
+        .then((answers) => {
+            console.log(answers)
+            const data = generateReadMe(answers)
+            console.log(data)
+            return writeFileAsync("./generated/README.md", data);
         }).then(() => {
             console.log("README generation was successful.");
         }).catch(error => console.log(error));
