@@ -1,19 +1,14 @@
-//Function to generates the markdown that gets written to the README
-function generateReadMe(answers) {
-
-    const badge2 = `[![LanguageCount](https://img.shields.io/github/languages/count/${answers.username}/${answers.repository})](https://github.com/${answers.username}/${answers.repository})`;
-
-    return `  
+  
     
-    # ProjectTitle ${answers.projectTitle}
+    # ProjectTitle Generate-README
 
-    ${badge2}
+    [![LanguageCount](https://img.shields.io/github/languages/count/ram-sah/portfolio)](https://github.com/ram-sah/portfolio)
 
     * Using Node.js, generate a template README.md file with users input.
     
     ## Description
 
-    ${answers.description}
+    This project is a command-line application that creates a good README file by answering a few prompts. It utilizes (fs) for writing the file, (util) to promisify the writing of the file and (inquirer) to ask the questions. In fact, the README for this project was created with this application. The README that is created is stored in the 'generated' file to keep it separate from this README.
 
     ## Table of Contents
 
@@ -36,45 +31,43 @@ function generateReadMe(answers) {
     ## Installation
 
     To install required dependencies, run this command:
-    \=========\=
-    ${answers.install}
-    \=========\=
+    ==========
+    npm i
+    ==========
 
     ## Usage
 
-    ${answers.usage}
+    write
     
     ### Technology Used 
     * [VScode](https://code.visualstudio.com/) - The editor of choice
      
     ## License
 
-    ${answers.license}
+    MIT License
 
     ## Contributors
 
-    ${answers.contributors}
+    dfgfg
 
     ## Tests
 
     To run tests, run the following command:
-    \========\=
-    ${answers.tests}
-    \========\=
+    =========
+    npm test
+    =========
 
     ## Questions
 
-    ${answers.username}
+    ram-sah
                 
-<img src="https://github.com/${answers.username}.png" alt="avatar" style="border-radius: 16px" width="30" />
+<img src="https://github.com/ram-sah.png" alt="avatar" style="border-radius: 16px" width="30" />
             
 If you have any questions Please contact: 
-(https://github.com/${answers.username}) directly at ${answers.email}
+(https://github.com/ram-sah) directly at mohan@gmail.com
 
     ## Repository
 
-    ${answers.repository}
+    portfolio
 
-    `
-}
-module.exports = generateReadMe;
+    
