@@ -81,7 +81,7 @@ async function init() {
             console.log(data);
             return writeFileAsync("./generated/README.md", data);
         }).then(() => {
-            console.log("README generation was successful.");
+            console.log("README Generation is successful, Check it in generated folder.");
         }).catch(error => console.log(error));
 }
 init();

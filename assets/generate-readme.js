@@ -1,68 +1,68 @@
 //Function to generates the markdown that gets written to the README
 function generateReadMe(answers) {
 
-    const badge = `[![LanguageCount](https://img.shields.io/github/languages/count/${answers.username}/${answers.repository})](https://github.com/${answers.username}/${answers.repository})`;
+const badge = `[![LanguageCount](https://img.shields.io/github/languages/count/${answers.username}/${answers.repository})](https://github.com/${answers.username}/${answers.repository})`;
 
-    return `  
+return `  
+
+# ProjectTitle ${answers.projectTitle}
+
+${badge}
+
+* Using Node.js, generate a template README.md file with users input.
+
+## Description
+
+${answers.description}
+
+## Table of Contents   
+
+* [Description](#description)
     
-    # ProjectTitle ${answers.projectTitle}
+* [Installation](#install)
+            
+* [Usage](#usage)
+            
+* [License](#license)
+            
+* [Contributing](#contributors)
+            
+* [Tests](#tests)
+            
+* [Questions](#questions)
 
-    ${badge}
+## Installation
 
-    * Using Node.js, generate a template README.md file with users input.
+To install required dependencies, run this command:
+\`\`\`\`
+${answers.install}
+\`\`\`\`
+
+## Usage
+
+${answers.usage}
+
+### Technology Used 
+* [VScode](https://code.visualstudio.com/) - The editor of choice
     
-    ## Description
+## License
 
-    ${answers.description}
+${answers.license}
 
-    ## Table of Contents   
+## Contributors
 
-    * [Description](#description)
-        
-    * [Installation](#install)
-                
-    * [Usage](#usage)
-                
-    * [License](#license)
-                
-    * [Contributing](#contributors)
-                
-    * [Tests](#tests)
-                
-    * [Questions](#questions)
+${answers.contributors}
 
-    ## Installation
+## Tests
 
-    To install required dependencies, run this command:
-    \`\`\`\`
-    ${answers.install}
-    \`\`\`\`
+To run tests, run the following command:
+\`\`\`\`
+${answers.tests}
+\`\`\`\`
 
-    ## Usage
+## Questions
 
-    ${answers.usage}
-    
-    ### Technology Used 
-    * [VScode](https://code.visualstudio.com/) - The editor of choice
-     
-    ## License
-
-    ${answers.license}
-
-    ## Contributors
-
-    ${answers.contributors}
-
-    ## Tests
-
-    To run tests, run the following command:
-    \`\`\`\`
-    ${answers.tests}
-    \`\`\`\`
-
-    ## Questions
-
-    ${answers.username}
+${answers.username}
                 
 <img src="https://github.com/${answers.username}.png" alt="avatar" style="border-radius: 16px" width="30" />
             
