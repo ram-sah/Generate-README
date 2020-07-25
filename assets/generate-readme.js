@@ -1,13 +1,13 @@
 //Function to generates the markdown that gets written to the README
 function generateReadMe(answers) {
 
-    const badge2 = `[![LanguageCount](https://img.shields.io/github/languages/count/${answers.username}/${answers.repository})](https://github.com/${answers.username}/${answers.repository})`;
+    const badge = `[![LanguageCount](https://img.shields.io/github/languages/count/${answers.username}/${answers.repository})](https://github.com/${answers.username}/${answers.repository})`;
 
     return `  
     
     # ProjectTitle ${answers.projectTitle}
 
-    ${badge2}
+    ${badge}
 
     * Using Node.js, generate a template README.md file with users input.
     

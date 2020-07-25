@@ -5,7 +5,6 @@ const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 const generateReadMe = require("./generate-readme")
 
-
 //Used Prompt to Ask questions to the user and store all the values inside user's data
 function promptUser() {
     return inquirer.prompt([
@@ -78,8 +77,8 @@ async function init() {
     promptUser()
         .then((answers) => {
             // console.log(answers)
-            const data = generateReadMe(answers)
-            console.log(data)
+            const data = generateReadMe(answers);
+            console.log(data);
             return writeFileAsync("./generated/README.md", data);
         }).then(() => {
             console.log("README generation was successful.");
