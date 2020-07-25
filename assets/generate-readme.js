@@ -33,7 +33,8 @@ function generateReadMe(answers) {
     ${answers.username}
 
     ## Repository
-    ${answer.repository}
+    ${answers.repository}
 
     `   
 }
+module.exports = generateReadMe;
