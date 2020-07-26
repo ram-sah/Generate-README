@@ -33,7 +33,7 @@ npm i
 
 ## Usage
 
-
+run index.js on terminal
 
 ### Technology Used 
 * [VScode](https://code.visualstudio.com/) - The editor of choice
@@ -44,7 +44,7 @@ This application is covered under : APACHE 2.0
 
 ## Contributors
 
-
+none
 
 ## Tests
 
@@ -57,13 +57,13 @@ npm test
 
 ram-sah
                 
-<img src="https://github.com/ram-sah.png" alt="avatar" style="border-radius: 16px" width="30" />
+<img src="https://github.com/ram-sah.png" alt="avatar" style="border-radius: 30px" width="60" />
             
 If you have any questions you can reach me at: 
-(https://github.com/ram-sah) directly email at: 
+ [Contact-Profile](https://github.com/ram-sah) directly email at: mohan2036@gmail.com
 
 ## Repository
 
-(https://github.com/ram-sah/)
+ [Repo](https://github.com/ram-sah/Generate-README)
 
     

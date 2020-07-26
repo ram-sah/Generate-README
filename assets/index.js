@@ -26,7 +26,7 @@ function promptUser() {
         },
         {
             type: "input",
-            message: "What is this project use for?",
+            message: "What is the use of project?",
             name: "usage"
         },
         {
