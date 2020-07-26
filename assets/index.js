@@ -34,13 +34,11 @@ function promptUser() {
             message: "select license for this project",
             name: "license",
             choices: [
-                "MIT License",
-                "ISC",
-                "Apache License 2.0",
-                "BSD 3-Clause",
-                "Mozilla Public License 2.0",
-                "GNU General Public",
-                "Eclipse Public License version 2.0"
+                "MIT",
+                "GPL 3.0",
+                "APACHE 2.0",
+                "BSD 3",  
+                "None"              
             ]
         },
         {
