@@ -33,7 +33,9 @@ npm install
         
 ## Usage
             
-* This is my first node.js project.
+* Run 'node index.js' from Terminal
+
+* [Watch-Video](https://drive.google.com/drive/folders/1wp392pvQrWaZ7j8pJSB3ujjFzycz6Ugu) - Demonstration of this project. 
 
 ### Technology Used 
 * [VScode](https://code.visualstudio.com/) - The editor of choice
@@ -56,13 +58,13 @@ npm test
 
 ## Questions
             
-<img src="https://github.com/ram-sah.png" alt="avatar" style="border-radius: 16px" width="30" />
+<img src="https://github.com/ram-sah.png" alt="avatar" style="border-radius: 30px" width="60" />
             
 If you have any questions please contact me [ram-sah](https://github.com/ram-sah) directly at mohan2036@gmail.com
 
 ### Repository
 
-(https://github.com/ram-sah/Generate-README)
+[Generate-README](https://github.com/ram-sah/Generate-README)
             
 ## Demo 
 
@@ -70,4 +72,4 @@ If you have any questions please contact me [ram-sah](https://github.com/ram-sah
 
 ### Credits
 
-For license badge: https://shields.io/category/license
+For license badge: [badge](https://shields.io/category/license)
