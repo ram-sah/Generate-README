@@ -1,18 +1,20 @@
 //Function to generates the markdown that gets written to the README
 function generateReadMe(answers) {
-
-const badge = `[![LanguageCount](https://img.shields.io/github/languages/count/${answers.username}/${answers.repository})](https://github.com/${answers.username}/${answers.repository})`;
-
-return `  
-
-# ProjectTitle ${answers.projectTitle}
+    let badge = "No license";
+    let license = answers.license
+    if (license.split(" ").length >1) {
+        license = license.split(" ").join("%20");
+    }
+if (answers.license !== "None") {
+    badge = `[![License: ${license}](https://img.shields.io/badge/License-${license}-green.svg)](https://opensource.org/licenses/${license})`;
+}
+return `# ProjectTitle: ${answers.projectTitle}
 
 ${badge}
 
-* Using Node.js, generate a template README.md file with users input.
-
 ## Description
 
+Using Node.js, Generate a template README.md file with users input.\n
 ${answers.description}
 
 ## Table of Contents   
@@ -69,9 +71,7 @@ ${answers.username}
 If you have any questions Please contact: 
 (https://github.com/${answers.username}) directly at ${answers.email}
 
-    ## Repository
-
-    ${answers.repository}
+## Repository
 
     `
 }
