@@ -33,7 +33,7 @@ npm i
 
 ## Usage
 
-generate readme
+
 
 ### Technology Used 
 * [VScode](https://code.visualstudio.com/) - The editor of choice
@@ -44,7 +44,7 @@ This application is covered under : APACHE 2.0
 
 ## Contributors
 
-none
+
 
 ## Tests
 
@@ -60,10 +60,10 @@ ram-sah
 <img src="https://github.com/ram-sah.png" alt="avatar" style="border-radius: 16px" width="30" />
             
 If you have any questions you can reach me at: 
-(https://github.com/ram-sah) directly email at: moan2036@gmail.com
+(https://github.com/ram-sah) directly email at: 
 
-### Repository
+## Repository
 
-(https://github.com/ram-sah/Generate-README)
+(https://github.com/ram-sah/)
 
     
