@@ -21,7 +21,7 @@ ${answers.description}
 
 * [Description](#description)
     
-* [Installation](#install)
+* [Installation](#Installation)
             
 * [Usage](#usage)
             
@@ -49,7 +49,7 @@ ${answers.usage}
     
 ## License
 
-${answers.license}
+This application is covered under : ${answers.license}
 
 ## Contributors
 
@@ -68,10 +68,12 @@ ${answers.username}
                 
 <img src="https://github.com/${answers.username}.png" alt="avatar" style="border-radius: 16px" width="30" />
             
-If you have any questions Please contact: 
-(https://github.com/${answers.username}) directly at ${answers.email}
+If you have any questions you can reach me at: 
+(https://github.com/${answers.username}) directly email at: ${answers.email}
 
 ## Repository
+
+(https://github.com/${answers.username}/${answers.repository})
 
     `
 }
