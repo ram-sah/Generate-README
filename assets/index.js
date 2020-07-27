@@ -26,7 +26,7 @@ function promptUser() {
         },
         {
             type: "input",
-            message: "What is the use of project?",
+            message: "How you use this project?",
             name: "usage"
         },
         {
@@ -79,7 +79,7 @@ async function init() {
             console.log(data);
             return writeFileAsync("./generated/README.md", data);
         }).then(() => {
-            console.log("README Generation is successful, Check it in generated folder.");
+            console.log("README Generate is successful, Check it in generated folder.");
         }).catch(error => console.log(error));
 }
 init();

@@ -33,7 +33,7 @@ npm i
 
 ## Usage
 
-run index.js on terminal
+node index.js on terminal 
 
 ### Technology Used 
 * [VScode](https://code.visualstudio.com/) - The editor of choice
