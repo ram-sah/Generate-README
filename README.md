@@ -21,6 +21,8 @@ This project is a command-line application that creates a good README file by an
             
 * [Questions](#Questions)
 
+* [Video](#VIDEO)
+
 * [Demo](#Demo)
          
 ## Installation
@@ -33,13 +35,10 @@ npm install
         
 ## Usage
             
-* Run 'node index.js' from Terminal
-
-* [Watch-Video](https://drive.google.com/file/d/1e4EDjSZ7-RzJZgmSwLbqOZZeLxAVgaQZ/view?usp=sharing) - Demonstration of this project. 
-
+Run 'node index.js' from Terminal
 
 ### Technology Used 
-* [VScode](https://code.visualstudio.com/) - The editor of choice
+[VScode](https://code.visualstudio.com/) - The editor of choice
             
 ## License 
             
@@ -61,16 +60,16 @@ npm test
             
 <img src="https://github.com/ram-sah.png" alt="avatar" style="border-radius: 30px" width="60" />
             
-If you have any questions please contact me [ram-sah](https://github.com/ram-sah) directly at mohan2036@gmail.com
+If you have any questions please contact me at mohan2036@gmail.com
+### GitHub Prifile: [ram-sah](https://github.com/ram-sah) 
+### Repository : [Generate-README](https://github.com/ram-sah/Generate-README)
+### Video:
+Video of this project: [Watch-Video](https://drive.google.com/file/d/1IkqG3zSthRqGhtAvovoUyhyTR6N40xHy/view?usp=sharing)
 
-### Repository
 
-[Generate-README](https://github.com/ram-sah/Generate-README)
-            
 ## Demo 
 
 ![goodReadme](https://user-images.githubusercontent.com/64625123/88471353-7c2f0180-ced6-11ea-9ff5-457008c3159f.gif)
 
-### Credits
+### Credits For license badge: [badge](https://shields.io/category/license) 
 
-For license badge: [badge](https://shields.io/category/license)
