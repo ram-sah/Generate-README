@@ -26,7 +26,7 @@ function promptUser() {
         },
         {
             type: "input",
-            message: "How you use this project?",
+            message: "How do you use this project?",
             name: "usage"
         },
         {
